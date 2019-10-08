@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="texto center"
+        android:gravity="center"
+        android:background="@color/magenta"
+        android:textColor="@color/branco"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="texto center/left"
+        android:gravity="center|left"
+        android:paddingLeft="20dp"
+        android:background="@color/rosa"
+        android:textColor="@color/branco"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="texto bottom/right"
+        android:gravity="right|center"
+        android:paddingRight="20dp"
+        android:background="@color/azulMarinho"
+        android:textColor="@color/branco"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="texto center/top"
+            android:layout_gravity="center|top"
+            android:background="@color/magenta"
+            android:textColor="@color/branco"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="texto center/bottom"
+            android:layout_gravity="center|bottom"
+            android:background="@color/azulEscuro"
+            android:textColor="@color/branco"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/azulMarinho"
+        android:textAllCaps="false"
+        android:textColor="@color/branco"
+        android:text="Enviar"/>
+
+</LinearLayout>
